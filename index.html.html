@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics Project Structure - Iran-US Conflict & Global Economic Impact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            padding: 50px 40px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            border-left: 4px solid #3498db;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .section::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            background: #3498db;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #3498db;
+        }
+        
+        .section-number {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .section h2 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .subsection {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 3px solid #95a5a6;
+        }
+        
+        .subsection h3 {
+            font-family: 'Crimson Pro', serif;
+            color: #34495e;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .content-points {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .content-points li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            color: #555;
+        }
+        
+        .content-points li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .tip-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .tip-box strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        
+        .data-box {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .data-box strong {
+            color: #0c5460;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        
+        .page-estimate {
+            display: inline-block;
+            background: #e7f3ff;
+            color: #0066cc;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #dee2e6;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Economics Project Structure</h1>
+            <p>The 2026 Iran-US Conflict: Global Economic Impacts and the Future of International Trade</p>
+        </div>
+        
+        <div class="content">
+            <!-- SECTION 1 -->
+            <div class="section">
+                <span class="section-number">Section 1</span>
+                <h2>Title Page & Abstract <span class="page-estimate">1-2 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>Include:</h3>
+                    <ul class="content-points">
+                        <li>Project title</li>
+                        <li>Your name, class, date</li>
+                        <li>School/institution information</li>
+                        <li>Brief abstract (150-250 words) summarizing the project's focus on the economic impacts of the Iran-US conflict on global oil markets, trade routes, and international economic order</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 2 -->
+            <div class="section">
+                <span class="section-number">Section 2</span>
+                <h2>Table of Contents <span class="page-estimate">1 page</span></h2>
+                
+                <div class="subsection">
+                    <h3>Format:</h3>
+                    <ul class="content-points">
+                        <li>List all sections with page numbers</li>
+                        <li>Include subsections for easy navigation</li>
+                        <li>Use clear, descriptive headings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 3 -->
+            <div class="section">
+                <span class="section-number">Section 3</span>
+                <h2>Introduction & Background <span class="page-estimate">3-4 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>3.1 Context Setting (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Brief overview of the February 2026 military conflict</li>
+                        <li>Key players: United States, Israel, Iran, Gulf States</li>
+                        <li>Timeline of major events (Feb 28 onwards)</li>
+                        <li>Scale of military operations: 2,000+ airstrikes in first week</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>3.2 Geopolitical Motivations (1-1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>Iran's domestic instability: protests, water crisis, economic freefall</li>
+                        <li>January 2026 protest crackdown (7,000-30,000 deaths estimated)</li>
+                        <li>US objectives: regime change, nuclear program elimination, ballistic missile destruction</li>
+                        <li>Israel's strategic interests</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>3.3 Project Scope & Research Question (0.5-1 page)</h3>
+                    <ul class="content-points">
+                        <li>Define your main research question</li>
+                        <li>Explain economic focus rather than political/military analysis</li>
+                        <li>Preview key economic concepts to be examined</li>
+                    </ul>
+                </div>
+                
+                <div class="tip-box">
+                    <strong>Writing Tip:</strong>
+                    Keep this section factual and objective. Set the stage without diving too deep into analysis yet.
+                </div>
+            </div>
+
+            <!-- SECTION 4 -->
+            <div class="section">
+                <span class="section-number">Section 4</span>
+                <h2>The Strait of Hormuz Crisis <span class="page-estimate">4-5 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>4.1 Geographic & Strategic Importance (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Location and dimensions (20 miles wide at narrowest point)</li>
+                        <li>Historical significance as international waterway</li>
+                        <li>Volume of trade: 1/3 of seaborne crude oil, 1/5 of LNG</li>
+                        <li>Countries dependent on the strait: Iran, Iraq, Kuwait, Saudi Arabia, UAE, Bahrain, Qatar</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>4.2 The Closure & Iran's Blockade Strategy (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>Iran's declaration closing the strait</li>
+                        <li>Methods: missiles, drones, naval mines, small boat attacks</li>
+                        <li>Scale of attacks: 180+ ballistic missiles to Israel (Day 1), 250+ to Gulf states</li>
+                        <li>3,000 merchant vessels stranded (10% of global container fleet)</li>
+                        <li>Iran's improvised toll system during the war</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>4.3 Alternative Export Routes (1.5-2 pages)</h3>
+                    <ul class="content-points">
+                        <li><strong>UAE:</strong> Habshan-Fujairah pipeline (bypasses strait)</li>
+                        <li><strong>Saudi Arabia:</strong> East-West pipeline to Red Sea (5-7 million barrels/day capacity)</li>
+                        <li><strong>Iraq:</strong> Iraq-Turkey pipeline through Kurdistan (600,000 barrels/day potential)</li>
+                        <li><strong>Iran:</strong> Jask port pipeline (15% of exports)</li>
+                        <li>Limitations of pipelines: capacity constraints, political issues</li>
+                    </ul>
+                </div>
+                
+                <div class="data-box">
+                    <strong>Key Statistics to Include:</strong>
+                    Global oil production shrank 8% but prices spiked 60% initially (eventually settling around $100/barrel)
+                </div>
+            </div>
+
+            <!-- SECTION 5 -->
+            <div class="section">
+                <span class="section-number">Section 5</span>
+                <h2>Oil Market Economics Analysis <span class="page-estimate">5-6 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>5.1 Supply & Demand Fundamentals (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>Pre-war global oil production levels</li>
+                        <li>Gulf region's share of global production</li>
+                        <li>Actual supply contraction: 8% vs perceived disruption</li>
+                        <li>Countries affected: production shutdowns in Iraq, Kuwait, UAE</li>
+                        <li>Storage capacity issues forcing production cuts</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>5.2 Price Elasticity of Demand (2 pages)</h3>
+                    <ul class="content-points">
+                        <li><strong>Define elasticity:</strong> relationship between price and quantity demanded</li>
+                        <li><strong>Comparison example:</strong> Breakfast cereal (elastic: -3.0) vs Oil (inelastic: -0.1)</li>
+                        <li>Why oil is inelastic: no immediate substitutes, non-discretionary use</li>
+                        <li>Short-term vs long-term elasticity differences</li>
+                        <li><strong>Calculate:</strong> 8% supply drop → 60% price increase = -0.13 elasticity</li>
+                        <li>Real-world implications: consumers cannot quickly reduce consumption</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>5.3 The Role of Commodity Traders (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>How commodity markets work: futures, speculation, physical storage</li>
+                        <li>Traders' influence on prices beyond supply/demand</li>
+                        <li>Narrative-driven price movements in opening days</li>
+                        <li>Market psychology: belief in "limited conflict" initially</li>
+                        <li>Self-fulfilling prophecies in commodity trading</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>5.4 Insurance Markets & Risk Premiums (1 page)</h3>
+                    <ul class="content-points">
+                        <li>War risk insurance cancellations (72-hour notice)</li>
+                        <li>Cost explosion: 0.1-0.25% → 3% of ship value per journey</li>
+                        <li>Joint War Committee's role in designating high-risk zones</li>
+                        <li>Impact on shipping decisions and global trade flows</li>
+                    </ul>
+                </div>
+                
+                <div class="tip-box">
+                    <strong>Include Graphs/Charts:</strong>
+                    Create visual representations of: (1) Oil price movements over time, (2) Supply/demand curves showing inelasticity, (3) Elasticity comparison table
+                </div>
+            </div>
+
+            <!-- SECTION 6 -->
+            <div class="section">
+                <span class="section-number">Section 6</span>
+                <h2>Regional Economic Impacts <span class="page-estimate">4-5 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>6.1 Gulf States: Dubai & UAE (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>Dubai's economic model: stability hub for foreign investment</li>
+                        <li>Attacks on infrastructure: hotels (Fairmont, Burj Al Arab), airport, Amazon data centers</li>
+                        <li>Foreign direct investment at risk</li>
+                        <li>Interceptor missile depletion: 800+ used in first week</li>
+                        <li>Economic diversification efforts undermined</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>6.2 Saudi Arabia, Qatar, Kuwait, Bahrain (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Production shutdowns and export losses</li>
+                        <li>Attacks on key infrastructure (Ras Tanura refinery, Ras Laffan LNG)</li>
+                        <li>Collective cost: $50+ billion in lost exports (first month)</li>
+                        <li>Existential threat: desalination plant vulnerability</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>6.3 Aviation Industry Crisis (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>Airspace closures across 11 countries</li>
+                        <li>18,000+ flights cancelled (first week)</li>
+                        <li>Hub model breakdown: Emirates, Etihad, Qatar Airways</li>
+                        <li>Passenger displacement: 1 million Americans in region</li>
+                        <li>Air freight disruption: 12% of global volume, 50% of Europe-China freight</li>
+                        <li>Long-term threat to Gulf aviation dominance</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>6.4 Iran's Economy Under War (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Pre-war conditions: currency collapse, water crisis</li>
+                        <li>Wartime destruction: infrastructure, military assets, oil facilities</li>
+                        <li>Karg Island: 90% of oil exports (at risk of seizure)</li>
+                        <li>Government budget dependence: 60% funded by oil</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 7 -->
+            <div class="section">
+                <span class="section-number">Section 7</span>
+                <h2>Global Economic Consequences <span class="page-estimate">4-5 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>7.1 Energy Price Shocks (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>Oil: +14% initially, peaked near $100/barrel</li>
+                        <li>Natural gas: +70% in Europe</li>
+                        <li>Malaysia most affected (Gulf oil dependent)</li>
+                        <li>Global inflation pressures</li>
+                        <li>Russian windfall: $45-151 billion additional revenue</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>7.2 Supply Chain Disruptions (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Container shipping: 3,000 vessels stranded</li>
+                        <li>Air freight bottlenecks</li>
+                        <li>Manufacturing delays globally</li>
+                        <li>Compound effect with Trump tariffs/trade wars</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>7.3 Geopolitical Economic Shifts (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>China's oil supply vulnerability</li>
+                        <li>Russia's economic gains from high oil prices</li>
+                        <li>Ukraine war funding implications</li>
+                        <li>European energy security concerns</li>
+                        <li>Economic pressure on US policy decisions</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>7.4 Financial Markets & Risk Assessment (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Political risk insurance premium increases</li>
+                        <li>Investment diversion from Middle East</li>
+                        <li>Stock market impacts in affected sectors</li>
+                        <li>Currency volatility</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 8 -->
+            <div class="section">
+                <span class="section-number">Section 8</span>
+                <h2>The Toll System Proposal: Economic & Legal Analysis <span class="page-estimate">5-6 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>8.1 Iran's Toll Booth Demand (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>Proposed fee: $2 million per vessel (~$1 per barrel)</li>
+                        <li>Wartime improvisation: cryptocurrency, yuan payments</li>
+                        <li>Countries that paid: China, Japan, India, Pakistan, Greece, Malaysia, Egypt</li>
+                        <li>Potential revenue: ~$6-14 billion annually for Iran</li>
+                        <li>Comparison to government budget (1/7 of operating costs)</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>8.2 Economic Impact Analysis (2 pages)</h3>
+                    <ul class="content-points">
+                        <li><strong>Bgal think tank calculations:</strong> $0.05-0.40 per barrel increase in global prices</li>
+                        <li>Who pays: 80% Gulf Arab exporters, 20% rest of world</li>
+                        <li>Gulf states' annual cost: $6-14 billion</li>
+                        <li>Compare to: Full closure ($50+ billion/month) vs Toll system ($1 billion/month extra)</li>
+                        <li><strong>Comparison to other tolls:</strong></li>
+                        <li>→ Suez Canal: $800,000 per supertanker ($9 billion/year for Egypt = 5% government budget)</li>
+                        <li>→ Panama Canal: $300,000 per vessel ($5.7 billion/year = 20% government budget)</li>
+                        <li>→ Hormuz proposal: Could fund 1/7 of Iranian government budget</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>8.3 International Maritime Law (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li><strong>UN Convention on the Law of the Sea (UNCLOS):</strong> freedom of navigation principle</li>
+                        <li>Natural straits vs artificial canals distinction</li>
+                        <li>Historical precedent: Denmark's Sound Dues (1400s-1857)</li>
+                        <li>Turkish Straits (Bosphorus) example: Montreux Convention loopholes</li>
+                        <li>Iran's legal justification vs international law</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>8.4 Geopolitical Power Shift (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Saudi Arabia's "spare capacity" dominance threatened</li>
+                        <li>Iran as potential "swing producer" of oil</li>
+                        <li>Control over Gulf states' economies</li>
+                        <li>Regional hegemony implications</li>
+                    </ul>
+                </div>
+                
+                <div class="data-box">
+                    <strong>Key Economic Concept:</strong>
+                    Explain "swing producer" concept - the ability to quickly increase/decrease oil production to influence global prices. Saudi Arabia currently holds 50-60% of global spare capacity.
+                </div>
+            </div>
+
+            <!-- SECTION 9 -->
+            <div class="section">
+                <span class="section-number">Section 9</span>
+                <h2>Cascading Global Consequences: Return to Mercantilism? <span class="page-estimate">4-5 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>9.1 Historical Context: Pre-WWII Trade Systems (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>Mercantilism era: tolls, taxes, tributes as norm</li>
+                        <li><strong>Examples:</strong></li>
+                        <li>→ Denmark's Sound Dues (15th-19th century): 2/3 of government revenue</li>
+                        <li>→ Ottoman/Byzantine Bosphorus tolls</li>
+                        <li>→ Portuguese "cartas" system in Indian Ocean</li>
+                        <li>→ Barbary Pirates & Caribbean tributes</li>
+                        <li>US founding principle: freedom of navigation (since 1798)</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>9.2 The Pax Americana System (1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>Post-WWII: US Navy as global maritime guarantor</li>
+                        <li>Economic benefits: free trade, globalization, wealth creation</li>
+                        <li>Cost to US: naval operations, freedom of navigation exercises</li>
+                        <li>Benefit to world: predictable, low-cost shipping</li>
+                        <li>Historical anomaly: 80 years without maritime tolls on major routes</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>9.3 Domino Effect: Potential Future Tolls (1-1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li><strong>If Hormuz toll is accepted, why not:</strong></li>
+                        <li>→ Denmark: Sound Dues 2.0 on Baltic oil (60% of Russian exports, $1.3B potential revenue)</li>
+                        <li>→ Turkey: Higher Bosphorus fees</li>
+                        <li>→ Bab al-Mandeb: Djibouti, Eritrea, Yemen tolls</li>
+                        <li>→ Gibraltar: Spain-Morocco cooperation</li>
+                        <li>→ Straits of Dover: UK-France tolls</li>
+                        <li>→ Malacca Strait: Indonesia tolls (affects China, Japan, Korea trade)</li>
+                        <li>→ Northwest Passage: Canada claims (Arctic warming)</li>
+                        <li>→ Bering Strait: US-Russia future tolls</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>9.4 Economic Implications of New Mercantilism (0.5-1 page)</h3>
+                    <ul class="content-points">
+                        <li>Increased global trade costs</li>
+                        <li>Slower globalization</li>
+                        <li>Reduced economic efficiency</li>
+                        <li>Naval arms race: countries protecting own trade routes</li>
+                        <li>Increased poverty and reduced international cooperation</li>
+                    </ul>
+                </div>
+                
+                <div class="tip-box">
+                    <strong>Critical Analysis Point:</strong>
+                    This section is where you analyze the long-term systemic risks. Connect economic theory (free trade benefits, transaction costs) to real-world consequences.
+                </div>
+            </div>
+
+            <!-- SECTION 10 -->
+            <div class="section">
+                <span class="section-number">Section 10</span>
+                <h2>Stakeholder Analysis & Decision-Making <span class="page-estimate">3-4 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>10.1 United States (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Contradictory war objectives: regime change vs negotiation</li>
+                        <li>Economic pressures: inflation, unpopularity (27% support)</li>
+                        <li>Strategic dilemma: accept toll (precedent) vs continue war (economic pain)</li>
+                        <li>Ukraine implications: Russian oil revenue windfall</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>10.2 Gulf Arab States (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Caught between US and Iran</li>
+                        <li>Economic devastation: $50B+ losses, infrastructure damage</li>
+                        <li>Existential threat: desalination plants</li>
+                        <li>Future vulnerability: wounded Iran seeking revenge OR Iranian control over economy</li>
+                        <li>Pressure to join war actively</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>10.3 Iran (0.5-1 page)</h3>
+                    <ul class="content-points">
+                        <li>Regime survival vs economic leverage</li>
+                        <li>Toll system as reparations + future funding</li>
+                        <li>Risk: further escalation, regime collapse</li>
+                        <li>Balkanization threat if ethnic militias advance</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>10.4 Global Stakeholders (0.5-1 page)</h3>
+                    <ul class="content-points">
+                        <li>China: oil supply dependence</li>
+                        <li>Europe: energy security, inflation</li>
+                        <li>Developing nations: higher fuel costs, economic slowdown</li>
+                        <li>Shipping industry: insurance costs, route planning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 11 -->
+            <div class="section">
+                <span class="section-number">Section 11</span>
+                <h2>Economic Theory Applications <span class="page-estimate">3-4 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>11.1 Market Structures & Competition (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Oil market as oligopoly (OPEC+)</li>
+                        <li>Choke point control as monopolistic advantage</li>
+                        <li>Price-setting power shifts</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>11.2 Externalities & Public Goods (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Freedom of navigation as global public good</li>
+                        <li>US Navy as provider with free-rider problem</li>
+                        <li>Negative externalities of conflict: environmental, humanitarian</li>
+                        <li>Positive externalities of stable trade routes</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>11.3 Game Theory: Prisoner's Dilemma (1-1.5 pages)</h3>
+                    <ul class="content-points">
+                        <li>Multiple players: US, Iran, Gulf States, global powers</li>
+                        <li>Cooperation vs defection payoffs</li>
+                        <li>Nash equilibrium analysis</li>
+                        <li>Escalation ladder as sequential game</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>11.4 Transaction Costs (0.5 page)</h3>
+                    <ul class="content-points">
+                        <li>Toll system as artificial transaction cost</li>
+                        <li>Impact on global trade efficiency</li>
+                        <li>Coase theorem implications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 12 -->
+            <div class="section">
+                <span class="section-number">Section 12</span>
+                <h2>Possible Outcomes & Scenarios <span class="page-estimate">3-4 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>12.1 Scenario 1: Toll System Accepted (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Short-term: Strait reopens, limited price increase ($0.05-0.40/barrel)</li>
+                        <li>Medium-term: Iran strengthens, Gulf states pay billions annually</li>
+                        <li>Long-term: Precedent set, other choke points follow, new mercantilism</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>12.2 Scenario 2: War Continues, Iran Defeated (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Military escalation: Karg Island seizure, ground operations</li>
+                        <li>Economic cost: prolonged oil disruption, massive military spending</li>
+                        <li>Risk: Iranian collapse into failed state (92 million people)</li>
+                        <li>Regional instability: refugees, terrorism, nuclear materials proliferation</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>12.3 Scenario 3: Negotiated Settlement (0.5-1 page)</h3>
+                    <ul class="content-points">
+                        <li>Iran concedes on nuclear program/missiles</li>
+                        <li>US provides security guarantees</li>
+                        <li>Hormuz remains free passage</li>
+                        <li>Likelihood and obstacles</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>12.4 Scenario 4: Stalemate & Frozen Conflict (0.5-1 page)</h3>
+                    <ul class="content-points">
+                        <li>Partial strait operation</li>
+                        <li>Continued sanctions and tensions</li>
+                        <li>Long-term elevated oil prices</li>
+                        <li>Perpetual instability</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 13 -->
+            <div class="section">
+                <span class="section-number">Section 13</span>
+                <h2>Conclusion & Analysis <span class="page-estimate">2-3 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>Key Findings Summary (1 page)</h3>
+                    <ul class="content-points">
+                        <li>Recap main economic impacts identified</li>
+                        <li>Most significant economic lessons learned</li>
+                        <li>Interconnection of geopolitics and economics</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Answer to Research Question (0.5-1 page)</h3>
+                    <ul class="content-points">
+                        <li>Direct answer to your main research question</li>
+                        <li>Evidence-based conclusions</li>
+                        <li>Acknowledgment of uncertainties</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Broader Implications (0.5-1 page)</h3>
+                    <ul class="content-points">
+                        <li>Future of global trade system</li>
+                        <li>US role in world order</li>
+                        <li>Economic nationalism vs globalization</li>
+                        <li>Lessons for policymakers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECTION 14 -->
+            <div class="section">
+                <span class="section-number">Section 14</span>
+                <h2>References & Bibliography <span class="page-estimate">2-3 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>Include:</h3>
+                    <ul class="content-points">
+                        <li>Academic sources on oil economics</li>
+                        <li>International law references (UNCLOS, maritime law)</li>
+                        <li>Think tank reports (Bgal analysis, etc.)</li>
+                        <li>Historical sources on mercantilism and trade routes</li>
+                        <li>News sources for factual events</li>
+                        <li>Economic textbooks for theory sections</li>
+                    </ul>
+                    <div class="tip-box" style="margin-top: 20px;">
+                        <strong>Citation Style:</strong>
+                        Use APA, MLA, or Chicago style consistently throughout. Check with your teacher for required format.
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 15 -->
+            <div class="section">
+                <span class="section-number">Section 15</span>
+                <h2>Appendices (Optional) <span class="page-estimate">2-4 pages</span></h2>
+                
+                <div class="subsection">
+                    <h3>Appendix A: Maps & Diagrams</h3>
+                    <ul class="content-points">
+                        <li>Map of Strait of Hormuz with shipping lanes</li>
+                        <li>Pipeline routes (Saudi, UAE, Iraq, Iran)</li>
+                        <li>Global oil choke points</li>
+                        <li>Attack locations and damaged infrastructure</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Appendix B: Statistical Data</h3>
+                    <ul class="content-points">
+                        <li>Oil production by country (before/during war)</li>
+                        <li>Price movements timeline</li>
+                        <li>Insurance cost data</li>
+                        <li>Shipping volume statistics</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Appendix C: Economic Calculations</h3>
+                    <ul class="content-points">
+                        <li>Elasticity calculations (show your work)</li>
+                        <li>Toll revenue projections</li>
+                        <li>Cost-benefit analyses</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Appendix D: Timeline</h3>
+                    <ul class="content-points">
+                        <li>Chronological list of key events</li>
+                        <li>February 28 onwards</li>
+                        <li>Economic milestones highlighted</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PROJECT GUIDELINES -->
+            <div class="section" style="border-left-color: #e74c3c;">
+                <span class="section-number" style="background: #e74c3c;">Important Guidelines</span>
+                <h2>Writing & Research Tips</h2>
+                
+                <div class="tip-box">
+                    <strong>Research Tips:</strong>
+                    <ul class="content-points" style="margin-top: 10px;">
+                        <li>Use academic databases for economic theory sources</li>
+                        <li>Cross-reference statistics from multiple sources</li>
+                        <li>Note the date of sources (this is a 2026 hypothetical scenario)</li>
+                        <li>Distinguish between facts and analysis in your writing</li>
+                    </ul>
+                </div>
+                
+                <div class="data-box">
+                    <strong>Economic Concepts to Define/Explain:</strong>
+                    <ul class="content-points" style="margin-top: 10px;">
+                        <li>Price elasticity of demand</li>
+                        <li>Supply and demand equilibrium</li>
+                        <li>Oligopoly and market power</li>
+                        <li>Public goods and free-rider problem</li>
+                        <li>Externalities (positive and negative)</li>
+                        <li>Transaction costs</li>
+                        <li>Game theory and Nash equilibrium</li>
+                        <li>Spare capacity and swing producer</li>
+                    </ul>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Visual Elements to Include:</h3>
+                    <ul class="content-points">
+                        <li>📊 Supply and demand graphs</li>
+                        <li>📈 Price movement charts</li>
+                        <li>🗺️ Maps of region and trade routes</li>
+                        <li>📋 Comparison tables (Suez, Panama, Hormuz tolls)</li>
+                        <li>🔢 Data tables with statistics</li>
+                        <li>⚖️ Cost-benefit analysis frameworks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TOTAL PAGE ESTIMATE -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 8px; text-align: center; margin-top: 40px;">
+                <h2 style="font-family: 'Crimson Pro', serif; font-size: 1.8em; margin-bottom: 15px;">Total Estimated Length</h2>
+                <p style="font-size: 2.5em; font-weight: bold; margin: 10px 0;">40-55 Pages</p>
+                <p style="font-size: 1.1em; opacity: 0.9;">(Including appendices, references, and visual elements)</p>
+                <p style="font-size: 0.95em; margin-top: 20px; opacity: 0.85;">Adjust sections based on your required project length. Core analysis sections (4-11) are most important.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Remember:</strong> This is a comprehensive outline. Focus on economic analysis rather than political commentary. Use data, theory, and evidence to support your arguments.</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Good luck with your economics project! 📚</p>
+        </div>
+    </div>
+</body>
+</html>
